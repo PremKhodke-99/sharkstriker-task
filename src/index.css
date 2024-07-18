@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
+.logo{
+  display: flex;
+  gap: 8px;
+}
+
+.logo .image{
+  height: 35px;
+}
+
+.logo .text{
+  color: #f09136;
+}
+
+.logo .text p:first-child{
+  font-size: 18px;
+}
+.logo .text p:nth-child(2){
+  font-size: 14px;
+}
+
+.navbar{
+  background: rgb(19,67,94);
+  background: linear-gradient(180deg, rgba(19,67,94,1) 0%, rgba(56,96,119,1) 45%, rgba(19,67,94,1) 90%);
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.navbar .menu{
+  display: flex;
+  color: #f09136;
+  height: 100%;
+}
+
+.navbar .menu h5{
+  border-left: 1px solid rgba(0, 0, 0, 0.277);
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.navbar .menu h5:last-child{
+  border-right: 1px solid rgba(0, 0, 0, 0.277);
+}
+
+.navbar .menu h5:hover{
+  cursor: pointer;
+}
+
+.navbar .menu h5:first-child{
+  color: white;
+  border-bottom: 4px solid #f09136;
+}
+
+.navbar .menu h5:nth-last-child(-n + 2){
+  color: white;
+}
+
+.navbar .profile{
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar .profile div{
+  padding: 8px 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.277);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .profile select{
+  background: none;
+  border: none;
+  color: white;
+}
+
+.navbar .profile img{
+  height: 20px;
+  display: inline-block;
+}
