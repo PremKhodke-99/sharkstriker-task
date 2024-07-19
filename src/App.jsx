@@ -1,7 +1,8 @@
+import Accordian from "./components/Accordian"
+import BarChart from "./components/BarChart"
 import Box from "./components/Box"
 import Earth from "./components/Earth"
 import Navbar from "./components/Navbar"
-// import { RadarChart } from "./components/RadarChart"
 import SearchAndFilter from "./components/SearchAndFilter"
 import Table from "./components/Table"
 
@@ -23,9 +24,10 @@ function App() {
                 <option>25</option>
               </select>
             </p>
-            {/* <RadarChart /> */}
+            <img src="radar.webp" alt="radar" />
           </div>
           <p className="para">Expand All</p>
+          <Accordian />
         </div>
 
         <div className="middle">
@@ -80,7 +82,7 @@ function App() {
                 <option>100</option>
               </select>
             </p>
-            <img src="" alt="bar" />
+            <BarChart barwidth={100} barheight={100} />
           </div>
           <p className="para">Collapse All</p>
 
@@ -95,6 +97,7 @@ function App() {
             <h5>Security Events Over Time</h5>
             <img src="graph-ico.png" />
           </div>
+          <BarChart barwidth={800} barheight={100} />
         </div>
       </div>
 
