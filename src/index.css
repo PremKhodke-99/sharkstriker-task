@@ -11,8 +11,10 @@ html {
   width: 100%;
   background-color: #000000;
   color: white;
+  overflow-x: hidden;
 }
 
+/* ***** Logo ****** */
 .logo {
   display: flex;
   gap: 8px;
@@ -34,6 +36,7 @@ html {
   font-size: 14px;
 }
 
+/* ***** Navbar ****** */
 .navbar {
   background: rgb(19, 67, 94);
   background: linear-gradient(180deg, rgba(19, 67, 94, 1) 0%, rgba(56, 96, 119, 1) 45%, rgba(19, 67, 94, 1) 90%);
@@ -101,12 +104,14 @@ html {
   display: inline-block;
 }
 
+/* ****** Search And Filter ******* */
 .search-and-filter {
   display: flex;
   justify-content: space-between;
   margin: 5px;
 }
 
+/* Search */
 .search-and-filter .search-bar {
   width: 40%;
 }
@@ -141,7 +146,8 @@ html {
   cursor: pointer;
 }
 
-.search-and-filter .filter{
+/* Filter */
+.search-and-filter .filter {
   display: flex;
   gap: 5px;
   align-items: center;
@@ -171,7 +177,7 @@ html {
   color: white;
 }
 
-.search-and-filter .filter button{
+.search-and-filter .filter button {
   height: 40px;
   width: 30px;
   background-color: #335366;
@@ -179,15 +185,261 @@ html {
   border-radius: 5px;
 }
 
-.search-and-filter .filter button img{
+.search-and-filter .filter button img {
   height: 20px;
 }
 
-.search-and-filter .filter button:hover{
+.search-and-filter .filter button:hover {
   cursor: pointer;
 }
 
-.search-and-filter .filter button strong{
+.search-and-filter .filter button strong {
   color: white;
   font-size: large;
+}
+
+/* ******* Grid View ******* */
+.grid-view {
+  height: 600px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 28% 43.33% 28%;
+  gap: 5px;
+}
+
+.grid-view div {
+  height: 100%;
+  padding: 6px;
+}
+
+.grid-view .left {
+  border-radius: 0 80px 80px 0;
+  background-color: #204052;
+  border: 0.5px solid #757c7e;
+  overflow: hidden;
+}
+
+.grid-view .right {
+  border-radius: 80px 0 0 80px;
+  background-color: #204052;
+  border: 0.5px solid #757c7e;
+  overflow: hidden;
+}
+
+.grid-view .left .top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: fit-content;
+}
+
+.grid-view .left img {
+  height: 18px;
+}
+
+/* Radar */
+.grid-view .left .radar {
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-view .left .radar select {
+  height: 30px;
+  width: 60px;
+  padding: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: #272727;
+  color: white;
+}
+
+.grid-view .left .radar img {
+  height: 100%;
+}
+
+.grid-view .left .para {
+  text-align: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Middle div */
+.grid-view .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-view .middle .top,
+.grid-view .middle .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  height: fit-content;
+}
+
+.grid-view .middle .top .box,
+.grid-view .middle .bottom .box {
+  height: 62px;
+  width: 160px;
+  background-color: #204052;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-view .middle .top .box h5,
+.grid-view .middle .bottom .box h5 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.grid-view .middle .top .box p,
+.grid-view .middle .bottom .box p {
+  color: #608da7;
+}
+
+.grid-view .middle .top .top-left {
+  border-top-left-radius: 30px;
+}
+
+.grid-view .middle .top .top-right {
+  border-top-right-radius: 30px;
+}
+
+.grid-view .middle .bottom .bottom-left {
+  border-bottom-left-radius: 30px;
+}
+
+.grid-view .middle .bottom .bottom-right {
+  border-bottom-right-radius: 30px;
+}
+
+
+.grid-view .middle .center {
+  width: 100%;
+  height:420px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.grid-view .middle .center .circle{
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border-bottom: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.grid-view .middle .center .circle img{
+  z-index: 1;
+  height: 106%;
+  position: absolute;
+  top: -53px;
+  left: -55px;
+}
+
+.grid-view .middle .center .circle .earth{
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 60px;
+  top: 40px;
+}
+/* Bar */
+.grid-view .right .bar {
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-view .right .bar select {
+  height: 30px;
+  width: 60px;
+  padding: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: #272727;
+  color: white;
+}
+
+.grid-view .right .bar img {
+  height: 100%;
+}
+
+.grid-view .right .para {
+  text-align: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.grid-view .right h5 span {
+  border: 1px solid white;
+  padding: 4px;
+}
+
+.grid-view .right .table {
+  margin-top: 20px;
+  font-size: 14px;
+  width: 400px;
+}
+
+.grid-view .right .table tr {
+  height: 20px;
+}
+
+/* ******* Bottom Bar ******** */
+
+.inner-box {
+  height: 200px;
+  width: 100%;
+  padding: 14px;
+  background: #204052;
+}
+
+.head img {
+  height: 20px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ***** Border ******* */
+
+.border {
+
+  margin: 5px;
+
+  --b: 1px;
+  /* thickness of the border */
+  --c: #757c7e;
+  /* color of the border */
+  --w: 25px;
+  /* width of border */
+
+
+  border: var(--b) solid #0000;
+  /* space for the border */
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 / var(--_p),
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
 }
