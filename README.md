@@ -1,7 +1,8 @@
 # Stellar Cyber Dashboard
 
 ## Video preview of deployed site
-![Video of deployed view](./screenshots/sharkstriker.mp4)
+https://github.com/user-attachments/assets/2e78f3e4-64a0-4794-98be-b75f35083c55
+
 
 ## Screenshot of Deployed
 ![Screenshot](./screenshots/deployed.png)
