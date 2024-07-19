@@ -1,4 +1,22 @@
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    RadarController,
+    Title,
+    Tooltip,
+    Legend,
+} from "chart.js";
 import { Radar } from 'react-chartjs-2';
+
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    RadarController,
+    Title,
+    Tooltip,
+    Legend,
+);
 
 const RadarChart = () => {
 
@@ -25,9 +43,9 @@ const RadarChart = () => {
         },
     };
 
-  return (
-    <Radar data={RadarData} options={RadarOptions} />
-  )
+    return (
+        <Radar data={RadarData} options={RadarOptions} />
+    )
 }
 
 export default RadarChart
